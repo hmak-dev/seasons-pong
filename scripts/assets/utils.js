@@ -3,12 +3,10 @@ export function clamp(min, value, max) {
 }
 
 export function circleIntersectWithRectangle(circle, rect) {
-    // temporarry variables to set edges for testing
     let testX = circle.center.x;
     let testY = circle.center.y;
     let axis = null;
 
-    // which edge is closest?
     if (circle.center.x < rect.left) {
         testX = rect.left;
         axis = 'x'
@@ -32,16 +30,20 @@ export function circleIntersectWithRectangle(circle, rect) {
         axis = dx <= dy ? 'y' : 'x'
     }
 
-    // get distance from closest edges
     const distX = circle.center.x - testX;
     const distY = circle.center.y - testY;
 
     const distance = Math.sqrt((distX * distX) + (distY * distY));
 
-    // if the distance is less than the radius, collision!
     return [distance <= circle.radius, axis];
 }
 
 export function distance(c1, c2) {
     return Math.hypot(c1.x - c2.x, c1.y - c2.y);
+}
+
+export function createElement(html) {
+    const elem = document.createElement('div');
+    elem.innerHTML = html;
+    return elem.firstChild;
 }

@@ -37,7 +37,7 @@ class Ball {
     }
 
     randomize(speed, direction) {
-        const angle = this.#randomAngle(45, direction);
+        const angle = this.#randomAngle(360, direction);
 
         this.sx = Math.cos(angle) * speed;
         this.sy = Math.sin(angle) * speed;
