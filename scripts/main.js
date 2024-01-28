@@ -9,10 +9,10 @@ const ctx = canvas.getContext('2d');
 const config = {
     size: 0.65,
 
-    speed: 10,
+    speed: 20,
     bounds: null,
 
-    cellCount: 32,
+    cellCount: 24,
     cellSize: null,
 
     ballSize: null,
