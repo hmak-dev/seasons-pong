@@ -17,10 +17,35 @@ body {
 
 
 h1 {
-    font-size: min(9vw, 64px);
+    display: flex;
+    align-items: center;
+    font-size: max(20px, min(9vw, 64px));
     font-weight: 400;
     margin: 0;
     margin-bottom: 20px;
+}
+
+h1 a {
+    display: block;
+    margin-inline-start: 40px;
+}
+h1 svg {
+    height: max(20px, min(5vw, 40px));
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    h1 a {
+        margin-inline-start: 0;
+    }
+
+    h1 svg {
+        height: 32px;
+    }
 }
 
 
