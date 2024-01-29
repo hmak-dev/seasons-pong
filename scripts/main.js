@@ -9,7 +9,7 @@ const ctx = canvas.getContext('2d');
 const config = {
     size: 0.65,
 
-    speed: 20,
+    speed: null,
     bounds: null,
 
     cellCount: 24,
@@ -58,6 +58,8 @@ function init() {
     canvas.height = canvas.width;
 
     stats.style.width = `${canvas.width}px`;
+
+    config.speed = canvas.width / 40;
 
     config.bounds = {
         left: 0,
