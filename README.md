@@ -1,6 +1,6 @@
-# Colors Fight
+# Seasons Pong
 
-It's the old popular Pong game but with a different automated approach. There will be 4 colors fighting each other to expand their teritory. It is based on Javascript Canvas.
+It's the old popular Pong game but with a different automated approach. There will be 4 seasons fighting each other to expand their teritory. It is based on Javascript Canvas.
 Just run the `html` file and keep staring at it.
 
 ## Credits
@@ -11,4 +11,4 @@ The color pallete came from *Google* brand colors.
 
 ## Demo
 
-Here is a [live experience](https://hmak-dev.github.io/color-fight/) of this little project.
+Here is a [live experience](https://hmak-dev.github.io/seasons-pong/) of this little project.
